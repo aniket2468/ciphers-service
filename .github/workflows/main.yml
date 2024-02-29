@@ -2,10 +2,10 @@ name: Run The Tests, Build the image
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,4 +30,3 @@ jobs:
         docker build -t ghcr.io/aniket2468/ciphers-service:latest-file Dockerfile .
         docker push ghcr.io/aniket2468/ciphers-service:latest
 
-        
