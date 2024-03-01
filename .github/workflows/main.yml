@@ -29,4 +29,4 @@ jobs:
       run: |
         docker login --username aniket2468 --password ${{secrets.ACCESS_TOKEN}} ghcr.io
         docker buildx build -t ghcr.io/aniket2468/ciphers-service:latest-file . --push
-        docker push ghcr.io/aniket2468/ciphers-service:latest
+        docker push ghcr.io/aniket2468/ciphers-service:latest-file
