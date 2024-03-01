@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from .ciphers import caesar_encode
 from django.http import JsonResponse
 

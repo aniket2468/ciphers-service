@@ -15,3 +15,10 @@ class CiphersTest (TestCase):
         expected = 'zlqwhu'
         output = caesar_encode(plain_text, shift)
         self.assertEqual(expected, output)
+    
+    def test_caesar_encoding_wrap(self):
+        plain_text = 'b'
+        shift = 1
+        expected = 'c'  # 'z' shifted by 1 should wrap around to 'a'
+        output = caesar_encode(plain_text, shift)
+        self.assertEqual(expected, output)
