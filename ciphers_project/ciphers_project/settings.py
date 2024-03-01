@@ -27,7 +27,7 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1',  'ciphers-service-latest-file.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1',  'ciphers-service-aav.onrender.com']
 
 # Application definition
 
